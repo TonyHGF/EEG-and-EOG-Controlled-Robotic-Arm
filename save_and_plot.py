@@ -35,6 +35,7 @@ def save_and_plot(sample):
     
     y = np.roll(y, -1, axis=1)
     y[:, -1] = sample.channels_data
+    print(y.shape)
     
     for i in range(8):
         lines[i].set_ydata(y[i, :])
@@ -49,7 +50,7 @@ def save_and_plot(sample):
         plt.show()
 
 # Create OpenBCI Cyton board object and start data stream
-board = OpenBCICyton(port='COM5')  # Ensure to use the correct COM port
+board = OpenBCICyton(port='COM11')  # Ensure to use the correct COM port
 board.start_stream(save_and_plot)
 
 # Wait for the stream to finish

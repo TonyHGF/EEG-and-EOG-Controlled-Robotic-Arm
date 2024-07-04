@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import csv
 import time
-import threading
 from datetime import datetime
+import os
 
 def realtime_eeg_monitor(port='COM3', duration=15, window_size=1000, y_axis_limit=(-1000, 1000)):
     """
@@ -17,7 +17,9 @@ def realtime_eeg_monitor(port='COM3', duration=15, window_size=1000, y_axis_limi
     y_axis_limit (tuple): Y-axis limits for the EEG plots.
     """
     # Define the filename to save data: eeg_data_date_time
+    dir = '../data'
     filename = f"eeg_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+    filename = os.path.join(dir, filename)
 
     # Initialize CSV file with headers
     with open(filename, mode='w', newline='') as file:
@@ -77,19 +79,11 @@ def periodic_np_array_generator(interval=0.3):
     while True:
         time.sleep(interval)
         current_data = np.copy(y)  # Assuming y is the current EEG data array
+        dir = '../data/'
         filename = f'eeg_data_{datetime.now().strftime("%Y%m%d_%H%M%S_%f")}.npy'
-        np.save(filename, current_data)
+        file_path = os.path.join(dir, filename)
+        # np.save(filename, current_data)
+        np.save(file_path, current_data)
         # Implement the transmission logic here
 
-if __name__ == "__main__":
-    # Start the EEG monitoring in a separate thread
-    monitoring_thread = threading.Thread(target=realtime_eeg_monitor, kwargs={
-        'port': 'COM3',
-        'duration': 15,
-        'window_size': 1000,
-        'y_axis_limit': (-1000, 1000)
-    })
-    monitoring_thread.start()
 
-    # Start the periodic NumPy array generator in the main thread
-    periodic_np_array_generator(interval=0.3)
