@@ -33,3 +33,4 @@
   环境配置 & 说明文档：https://pypi.org/project/openbci-stream/
 - EEG 实时监测：https://github.com/AITRICS/EEG_real_time_seizure_detection
 - EEG 去除眼动伪影（可以考虑反向一下，如何识别眼动伪影）：https://www.x-mol.com/paper/1651263943939469312/t?recommendPaper=1368377261352968192
+- 16 通道脑电帽的文件读取：https://github.com/EmilioGarzia/EEG_ECG-Reader-ULTRACORTEX-MarkIV-
