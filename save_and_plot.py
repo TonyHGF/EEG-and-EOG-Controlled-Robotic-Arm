@@ -50,7 +50,7 @@ def save_and_plot(sample):
         plt.show()
 
 # Create OpenBCI Cyton board object and start data stream
-board = OpenBCICyton(port='COM11')  # Ensure to use the correct COM port
+board = OpenBCICyton(port='COM3')  # Ensure to use the correct COM port
 board.start_stream(save_and_plot)
 
 # Wait for the stream to finish
