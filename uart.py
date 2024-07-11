@@ -3,7 +3,7 @@ import time
 
 # 配置串口参数
 ser = serial.Serial(
-    port='COM3',  # 根据实际情况修改端口号
+    port='COM8',  # 根据实际情况修改端口号
     baudrate=115200,
     parity=serial.PARITY_NONE,
     stopbits=serial.STOPBITS_ONE,
@@ -18,7 +18,7 @@ if ser.is_open:
 try:
     while True:
         # 发送数据
-        ser.write(b'Hello from Python!\n')
+        ser.write(b'#000P1000T1500!\n')
         time.sleep(1)
 
         # 接收数据
