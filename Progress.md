@@ -11,8 +11,8 @@
 
 > 计划：
 >
-> - [x] 完成在线数据读取（在 cqy 电脑上配环境，看一眼 GPT ），写一个程序能实时接收电信号，并根据电信号做出决策
-> - [x] 完成机械手的简单控制操作
+> - [X] 完成在线数据读取（在 cqy 电脑上配环境，看一眼 GPT ），写一个程序能实时接收电信号，并根据电信号做出决策
+> - [X] 完成机械手的简单控制操作
 > - [X] EEG & EOG introduction slides
 > - [X] 瞅一眼OpenBCI 公开数据集
 >
@@ -34,3 +34,6 @@
 - EEG 实时监测：https://github.com/AITRICS/EEG_real_time_seizure_detection
 - EEG 去除眼动伪影（可以考虑反向一下，如何识别眼动伪影）：https://www.x-mol.com/paper/1651263943939469312/t?recommendPaper=1368377261352968192
 - 16 通道脑电帽的文件读取：https://github.com/EmilioGarzia/EEG_ECG-Reader-ULTRACORTEX-MarkIV-
+
+
+111
