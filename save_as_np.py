@@ -30,7 +30,7 @@ def save_np(sample):
         
 
 def main():
-    board = OpenBCICyton(port='COM11')  # Ensure to use the correct COM port
+    board = OpenBCICyton(port='COM3')  # Ensure to use the correct COM port
     board.start_stream(save_np)
 
 if __name__ == "__main__":
