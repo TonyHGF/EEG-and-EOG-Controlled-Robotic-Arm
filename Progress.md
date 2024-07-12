@@ -36,4 +36,21 @@
 - 16 通道脑电帽的文件读取：https://github.com/EmilioGarzia/EEG_ECG-Reader-ULTRACORTEX-MarkIV-
 
 
-111
+
+## Week 2
+
+- 解决了实时通讯问题，现在可以用 Python code 实时传输信号，让机械臂的指定舵机移动到指定位置
+- 在用 Python 数据读取的时候遇到了很大问题，问题大概是这个：https://openbci.com/forum/index.php?p=/discussion/740/how-get-the-value-in-uv
+
+​		解决方案有可能是：
+
+- 跟李宗钰学长联系，存在一种方式是向指定位置移动的：
+
+  <img src="./imgs/manual1.png" style="zoom:50%;" />
+
+  指令如下：
+
+  <img src="./imgs/instr.png" style="zoom:50%;" />
+
+
+
