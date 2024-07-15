@@ -35,15 +35,12 @@
 - EEG 去除眼动伪影（可以考虑反向一下，如何识别眼动伪影）：https://www.x-mol.com/paper/1651263943939469312/t?recommendPaper=1368377261352968192
 - 16 通道脑电帽的文件读取：https://github.com/EmilioGarzia/EEG_ECG-Reader-ULTRACORTEX-MarkIV-
 
-
-
 ## Week 2
 
 - 解决了实时通讯问题，现在可以用 Python code 实时传输信号，让机械臂的指定舵机移动到指定位置
 - 在用 Python 数据读取的时候遇到了很大问题，问题大概是这个：https://openbci.com/forum/index.php?p=/discussion/740/how-get-the-value-in-uv
 
-​		解决方案有可能是：
-
+  解决方案有可能是：
 - 跟李宗钰学长联系，存在一种方式是向指定位置移动的：
 
   <img src="./imgs/manual1.png" style="zoom:50%;" />
@@ -52,5 +49,13 @@
 
   <img src="./imgs/instr.png" style="zoom:50%;" />
 
+* 信号处理：https://chatgpt.com/share/75b0b868-035e-4dc2-9e4d-d7ef3777772e
+* 
 
 
+111：
+
+* https://blog.csdn.net/qq_38424674/article/details/109386298
+* https://zhanghuan95.github.io/2020/04/09/OpenBCI/
+* https://docs.openbci.com/Examples/ExamplesLanding/
+* https://github.com/WATOLINK/mind-speech-interface-ssvep
