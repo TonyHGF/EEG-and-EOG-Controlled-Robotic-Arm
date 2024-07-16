@@ -52,10 +52,9 @@
 * 信号处理：https://chatgpt.com/share/75b0b868-035e-4dc2-9e4d-d7ef3777772e
 * 
 
-
 111：
 
-* https://blog.csdn.net/qq_38424674/article/details/109386298
-* https://zhanghuan95.github.io/2020/04/09/OpenBCI/
-* https://docs.openbci.com/Examples/ExamplesLanding/
-* https://github.com/WATOLINK/mind-speech-interface-ssvep
+1. https://blog.csdn.net/qq_38424674/article/details/109386298
+1. https://zhanghuan95.github.io/2020/04/09/OpenBCI/
+1. **https://docs.openbci.com/Examples/ExamplesLanding/**
+1. https://github.com/WATOLINK/mind-speech-interface-ssvep
